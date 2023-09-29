@@ -38,6 +38,7 @@
 #include "google/protobuf/compiler/php/php_generator.h"
 #include "google/protobuf/compiler/python/generator.h"
 #include "google/protobuf/compiler/python/pyi_generator.h"
+#include "google/protobuf/compiler/r/r_generator.h"
 #include "google/protobuf/compiler/ruby/ruby_generator.h"
 #include "google/protobuf/compiler/rust/generator.h"
 
@@ -117,6 +118,12 @@ int ProtobufMain(int argc, char* argv[]) {
   rust::RustGenerator rust_generator;
   cli.RegisterGenerator("--rust_out", &rust_generator,
                         "Generate Rust sources.");
+
+
+  // R
+  r::Generator r_generator;
+  cli.RegisterGenerator("--r_out", &r_generator,
+                        "Generate R sources.");                   
   return cli.Run(argc, argv);
 }
 

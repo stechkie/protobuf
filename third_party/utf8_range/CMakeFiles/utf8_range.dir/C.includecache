@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sammoham/personal_ws/protobuf/third_party/utf8_range/naive.c
+stdio.h
+-
+
+/home/sammoham/personal_ws/protobuf/third_party/utf8_range/range2-neon.c
+stdio.h
+-
+stdint.h
+-
+arm_neon.h
+-
+
+/home/sammoham/personal_ws/protobuf/third_party/utf8_range/range2-sse.c
+stdio.h
+-
+stdint.h
+-
+x86intrin.h
+-
+

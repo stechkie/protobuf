@@ -369,6 +369,7 @@ set(libprotoc_srcs
   ${protobuf_SOURCE_DIR}/src/google/protobuf/compiler/python/generator.cc
   ${protobuf_SOURCE_DIR}/src/google/protobuf/compiler/python/helpers.cc
   ${protobuf_SOURCE_DIR}/src/google/protobuf/compiler/python/pyi_generator.cc
+  ${protobuf_SOURCE_DIR}/src/google/protobuf/compiler/r/r_generator.cc
   ${protobuf_SOURCE_DIR}/src/google/protobuf/compiler/retention.cc
   ${protobuf_SOURCE_DIR}/src/google/protobuf/compiler/ruby/ruby_generator.cc
   ${protobuf_SOURCE_DIR}/src/google/protobuf/compiler/rust/accessors/accessors.cc
@@ -478,6 +479,7 @@ set(libprotoc_hdrs
   ${protobuf_SOURCE_DIR}/src/google/protobuf/compiler/python/generator.h
   ${protobuf_SOURCE_DIR}/src/google/protobuf/compiler/python/helpers.h
   ${protobuf_SOURCE_DIR}/src/google/protobuf/compiler/python/pyi_generator.h
+  ${protobuf_SOURCE_DIR}/src/google/protobuf/compiler/r/r_generator.h
   ${protobuf_SOURCE_DIR}/src/google/protobuf/compiler/retention.h
   ${protobuf_SOURCE_DIR}/src/google/protobuf/compiler/ruby/ruby_generator.h
   ${protobuf_SOURCE_DIR}/src/google/protobuf/compiler/rust/accessors/accessors.h

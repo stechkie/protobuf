@@ -1813,6 +1813,7 @@ CommandLineInterface::ParseArgumentStatus CommandLineInterface::ParseArguments(
 
   std::vector<std::string> arguments;
   for (int i = 1; i < argc; ++i) {
+    std::cerr << "arg is " << (argv[i] + 1) << std::endl;
     if (argv[i][0] == '@') {
       if (!ExpandArgumentFile(argv[i] + 1, &arguments)) {
         std::cerr << "Failed to open argument file: " << (argv[i] + 1)
